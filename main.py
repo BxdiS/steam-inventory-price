@@ -17,7 +17,7 @@ def main():
     DEBUG = False
 
     while True:
-        user_input = input("Enter Vanity URL or SteamID32: ").strip()
+        user_input = input("Enter SteamID32, SteamID64 or Vanity URL: ").strip()
         if user_input.isdigit() and len(user_input) <= 10:
             steamid64 = steamid32_to_steamid64(int(user_input))
         if user_input.isdigit() and len(user_input) > 10:
