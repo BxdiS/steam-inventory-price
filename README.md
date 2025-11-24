@@ -6,7 +6,7 @@ Works for any game that has items on the Steam Community Market
 
 # Features
 
-* Fetch inventory by SteamID32 or Vanity URL
+* Fetch inventory by SteamID32, SteamID64 or Vanity URL
 * Supports any Steam game via AppID
 * Async fetching with progress display
 * Automatic retries on empty or invalid responses
@@ -35,7 +35,7 @@ python main.py
 
 Follow the steps:
 
-1. Enter a SteamID32 or Vanity URL.
+1. Enter a SteamID32, SteamID64 or Vanity URL.
 2. Enter the AppID of the game.
 3. Optional: enable debug output.
 4. The script fetches inventory items and their prices.
