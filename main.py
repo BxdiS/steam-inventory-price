@@ -20,6 +20,8 @@ def main():
         user_input = input("Enter Vanity URL or SteamID32: ").strip()
         if user_input.isdigit() and len(user_input) <= 10:
             steamid64 = steamid32_to_steamid64(int(user_input))
+        if user_input.isdigit() and len(user_input) > 10:
+            steamid64 = user_input
         else:
             steamid64 = vanity_to_steamid64_public(user_input)
             if steamid64 is None:

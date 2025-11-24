@@ -51,7 +51,7 @@ async def fetch_prices(appid, items, DEBUG=False):
             price = await get_item_price(session, appid, market_name, DEBUG)
             prices[market_name] = price
             remaining = total - i
-            sys.stdout.write(f"\rItems remaining: {remaining}  | {market_name}: ${price:.2f}")
+            sys.stdout.write(f"\rItems remaining: {remaining}  | {market_name}: ${price:.2f}\n")
             sys.stdout.flush()
             await asyncio.sleep(random.uniform(3, 6))
     print()
